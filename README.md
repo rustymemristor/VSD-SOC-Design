@@ -20,4 +20,4 @@ Tasks for lab 1 include
 4. Checking Synthesis Logs for instantiations.
 5. Calculating Area
 
-![](Screenshots/Lab1/)
+![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)
