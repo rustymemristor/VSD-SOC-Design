@@ -25,8 +25,18 @@ Tasks for lab 1 include
 
 ![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)
 Invoking the openlane interactive flow and exploring the picorv32a directory structure.
-![Running synthesis](Screenshots/Lab1/Screenshot_20240712_194126.png)
-Running Synthesis
+
+![Viewing main config.tcl file](Screenshots/Lab1/Screenshot_20240712_194126.png)
+Viewing main config.tcl file
+
+![](Screenshot_20240712_194900.png)
+![](Screenshot_20240712_194915.png)
+![](Screenshot_20240712_195059.png)
+![](Screenshot_20240712_195459.png)
+![](Screenshot_20240712_200057.png)
+![](Screenshot_20240712_200114.png)
+![](Screenshot_20240712_200231.png)
+
 
 
 
@@ -34,5 +44,5 @@ Running Synthesis
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODU1NzE1Nl19
+eyJoaXN0b3J5IjpbLTE3ODMyNzE0NDddfQ==
 -->
