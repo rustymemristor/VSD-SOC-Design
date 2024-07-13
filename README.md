@@ -30,9 +30,9 @@ Invoking the openlane interactive flow and exploring the picorv32a directory str
 Viewing main config.tcl file
 ![](Screenshots/Lab1/Screenshot_20240712_194915.png)
 Preparing the picorv32a design.
-'''
+```
 prep -design picorv32a
-'''
+```
 
 ![](Screenshots/Lab1/Screenshot_20240712_194900.png)
 Viewing the output of prep design command. This is created inside the runs folder created in the above step. In the current openlane version there are 3 files, this is the nominal version hence called merged.nom.lef
@@ -42,9 +42,9 @@ Viewing config.tcl created by starting the run.
 
 ![](Screenshots/Lab1/Screenshot_20240712_195459.png)
 Running Synthesis.
-''' 
+```
 run_synthesis
-'''
+```
 
 
 ![](Screenshots/Lab1/Screenshot_20240712_200057.png)
@@ -62,5 +62,5 @@ Viewing Synthesis STA Log.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMjU2NDkwMF19
+eyJoaXN0b3J5IjpbMTMwMDYwODg4NF19
 -->
