@@ -1,3 +1,6 @@
+
+
+
 # VSD-SOC-Design
 Documentation for the NASSCOM-VSD-SOC Program. This project does not use the default image, and hence some differences in commands may be present. These will be mentioned when used.
 
@@ -22,4 +25,14 @@ Tasks for lab 1 include
 
 ![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)
 Invoking the openlane interactive flow and exploring the picorv32a directory structure.
+![Running synthesis](Screenshots/Lab1/Screenshot_20240712_194126.png)
+Running Synthesis
 
+
+
+
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY0ODU1NzE1Nl19
+-->
