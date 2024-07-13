@@ -20,25 +20,30 @@ Tasks for lab 1 include
 1. Learning basic directory structure in openlane
 2. Invoking the openlane flow interactively
 3. Running synthesis
-4. Checking Synthesis Logs for instantiations.
-5. Calculating Area
+4. Checking Synthesis Logs for instantiations, cell count etc. 
+5. Calculating Flop Ration
 
-![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)
-Invoking the openlane interactive flow and exploring the picorv32a directory structure.
+![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)Invoking the openlane interactive flow and exploring the picorv32a directory structure.
+
 
 ![Viewing main config.tcl file](Screenshots/Lab1/Screenshot_20240712_194126.png)
 Viewing main config.tcl file
+
+
 ![](Screenshots/Lab1/Screenshot_20240712_194915.png)
 Preparing the picorv32a design.
 ```
 prep -design picorv32a
 ```
 
+
 ![](Screenshots/Lab1/Screenshot_20240712_194900.png)
 Viewing the output of prep design command. This is created inside the runs folder created in the above step. In the current openlane version there are 3 files, this is the nominal version hence called merged.nom.lef
 
+
 ![](Screenshots/Lab1/Screenshot_20240712_195059.png)
 Viewing config.tcl created by starting the run.
+
 
 ![](Screenshots/Lab1/Screenshot_20240712_195459.png)
 Running Synthesis.
@@ -50,11 +55,28 @@ run_synthesis
 ![](Screenshots/Lab1/Screenshot_20240712_200057.png)
 Viewing Synthesis Log. These are created under the logs/synthesis folder inside the current run.
 
+
 ![](Screenshots/Lab1/Screenshot_20240712_200114.png)
 Viewing Synthesis Log.
 
+
+![](Screenshots/Lab1/Screenshot_20240712_153818.png)
+Viewing Synthesis Log.
+
+
 ![](Screenshots/Lab1/Screenshot_20240712_200231.png)
 Viewing Synthesis STA Log.
+
+To calculate flop ratio, there is a simple formula
+```math
+Flop\;Ratio = \frac{Total\;Number\;of\;D\;Flip-flops}{Total\;Number\;of\;cells}
+```
+```math
+Flop\;Ratio = \frac{1513}{16558} = 0.091375770021
+```
+```math
+\%Flop\;Ratio = 09.1375770021
+```
 
 
 
@@ -62,5 +84,5 @@ Viewing Synthesis STA Log.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDYwODg4NF19
+eyJoaXN0b3J5IjpbLTgwOTIyMzQ0Ml19
 -->
