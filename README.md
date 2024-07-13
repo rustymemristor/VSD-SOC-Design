@@ -28,15 +28,33 @@ Invoking the openlane interactive flow and exploring the picorv32a directory str
 
 ![Viewing main config.tcl file](Screenshots/Lab1/Screenshot_20240712_194126.png)
 Viewing main config.tcl file
+![](Screenshots/Lab1/Screenshot_20240712_194915.png)
+Preparing the picorv32a design.
+'''
+prep -design picorv32a
+'''
 
 ![](Screenshots/Lab1/Screenshot_20240712_194900.png)
-![](Screenshots/Lab1/Screenshot_20240712_194915.png)
-![](Screenshots/Lab1/Screenshot_20240712_195059.png)
-![](Screenshots/Lab1/Screenshot_20240712_195459.png)
-![](Screenshots/Lab1/Screenshot_20240712_200057.png)
-![](Screenshots/Lab1/Screenshot_20240712_200114.png)
-![](Screenshots/Lab1/Screenshot_20240712_200231.png)
+Viewing the output of prep design command. This is created inside the runs folder created in the above step. In the current openlane version there are 3 files, this is the nominal version hence called merged.nom.lef
 
+![](Screenshots/Lab1/Screenshot_20240712_195059.png)
+Viewing config.tcl created by starting the run.
+
+![](Screenshots/Lab1/Screenshot_20240712_195459.png)
+Running Synthesis.
+''' 
+run_synthesis
+'''
+
+
+![](Screenshots/Lab1/Screenshot_20240712_200057.png)
+Viewing Synthesis Log. These are created under the logs/synthesis folder inside the current run.
+
+![](Screenshots/Lab1/Screenshot_20240712_200114.png)
+Viewing Synthesis Log.
+
+![](Screenshots/Lab1/Screenshot_20240712_200231.png)
+Viewing Synthesis STA Log.
 
 
 
@@ -44,5 +62,5 @@ Viewing main config.tcl file
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE3ODY1MjBdfQ==
+eyJoaXN0b3J5IjpbMTExMjU2NDkwMF19
 -->
