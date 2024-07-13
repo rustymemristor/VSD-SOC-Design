@@ -21,3 +21,5 @@ Tasks for lab 1 include
 5. Calculating Area
 
 ![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)
+Invoking the openlane interactive flow and exploring the picorv32a directory structure.
+
