@@ -60,7 +60,7 @@ Viewing Synthesis Log. These are created under the logs/synthesis folder inside 
 Viewing Synthesis Log.
 
 
-![](Screenshots/Lab1/Screenshot_20240712_153818.png)
+![](Screenshots/Lab1/Screenshot_20240713_153818.png)
 Viewing Synthesis Log.
 
 
@@ -90,5 +90,5 @@ Tasks for lab 2 include
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk1NDQ5MTddfQ==
+eyJoaXN0b3J5IjpbLTE5NDU2ODc1MDhdfQ==
 -->
