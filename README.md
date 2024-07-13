@@ -80,6 +80,7 @@ Flop\;Ratio = \frac{1513}{16558} = 0.091375770021
 
 ## Lab 2
 Tasks for lab 2 include
+
 1. 
 2. 
 
@@ -89,5 +90,5 @@ Tasks for lab 2 include
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODY0MDc5Nl19
+eyJoaXN0b3J5IjpbMzc5MzEzNzQ2XX0=
 -->
