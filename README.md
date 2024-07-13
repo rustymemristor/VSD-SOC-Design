@@ -80,9 +80,11 @@ Flop\;Ratio = \frac{1513}{16558} = 0.091375770021
 
 ## Lab 2
 Tasks for lab 2 include
-
-1. 
-2. 
+1.  Running the floorplan.
+2.  Calculating die area.
+3.  Examining the produced def file using MAGIC.
+4. Running placement.
+5. Viewing the def file post placement.
 
 
 
@@ -90,5 +92,5 @@ Tasks for lab 2 include
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDU2ODc1MDhdfQ==
+eyJoaXN0b3J5IjpbODE4ODEwMTkwXX0=
 -->
