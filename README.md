@@ -78,11 +78,16 @@ Flop\;Ratio = \frac{1513}{16558} = 0.091375770021
 \%Flop\;Ratio = 09.1375770021
 ```
 
+## Lab 2
+Tasks for lab 2 include
+1. 
+2. 
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTIyMzQ0Ml19
+eyJoaXN0b3J5IjpbLTY0ODY0MDc5Nl19
 -->
