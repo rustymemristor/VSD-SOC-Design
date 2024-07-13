@@ -29,13 +29,13 @@ Invoking the openlane interactive flow and exploring the picorv32a directory str
 ![Viewing main config.tcl file](Screenshots/Lab1/Screenshot_20240712_194126.png)
 Viewing main config.tcl file
 
-![](Screenshot_20240712_194900.png)
-![](Screenshot_20240712_194915.png)
-![](Screenshot_20240712_195059.png)
-![](Screenshot_20240712_195459.png)
-![](Screenshot_20240712_200057.png)
-![](Screenshot_20240712_200114.png)
-![](Screenshot_20240712_200231.png)
+![](Screenshots/Lab1/Screenshot_20240712_194900.png)
+![](Screenshots/Lab1/Screenshot_20240712_194915.png)
+![](Screenshots/Lab1/Screenshot_20240712_195059.png)
+![](Screenshots/Lab1/Screenshot_20240712_195459.png)
+![](Screenshots/Lab1/Screenshot_20240712_200057.png)
+![](Screenshots/Lab1/Screenshot_20240712_200114.png)
+![](Screenshots/Lab1/Screenshot_20240712_200231.png)
 
 
 
@@ -44,5 +44,5 @@ Viewing main config.tcl file
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODMyNzE0NDddfQ==
+eyJoaXN0b3J5IjpbLTE5OTE3ODY1MjBdfQ==
 -->
