@@ -21,7 +21,7 @@ Tasks for lab 1 include
 2. Invoking the openlane flow interactively
 3. Running synthesis
 4. Checking Synthesis Logs for instantiations, cell count etc. 
-5. Calculating Flop Ration
+5. Calculating Flop Ratio
 
 ![Invoking the openlane interactive flow and exploring the picorv32a directory structure](Screenshots/Lab1/Screenshot_20240712_184442.png)Invoking the openlane interactive flow and exploring the picorv32a directory structure.
 
