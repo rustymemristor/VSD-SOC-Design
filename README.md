@@ -87,6 +87,78 @@ Tasks for lab 2 include
 5. Viewing the def file post placement.
 
 
+![Running the floorplan](Screenshots/Lab2/Screenshot_20240713_162958.png)
+Running the floorplan and initial floorplan log.
 
 
+![](Screenshots/Lab2/Screenshot_20240713_163025.png)
+Initial IO placement (In this case it is equidistant randomised)
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163050.png)
+Initial Tapcell placement.
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163118.png)
+Initial Power Distribution Network (PDN).
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163241.png)
+Created DEF file. The def file created has a priority order of 
+```
+1. specific pdk instances
+2. config.tcl file held locally
+3. configuration/floorplan.tcl
+```
+It shows the area in microns, in the format ```DIE AREA (x0,y0) (x1, y1)``` We can calculate the die area by
+$$
+Die Area = 692,760 μm \times 703,480 μm = 487,263,728,000 μm^2
+$$
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163546.png)
+This is the command to view the DEF file created in magic. In my case a custom alias called magicsky is used which sets my graphics to cairo and sets technology to sky130A. This command is executed inside the generated floorplan def folder, and hence does not use the full pathnames.
+```
+magicsky lef read ../../tmp/merged.nom.lef def read picorv32a.def &
+```
+
+![](Screenshots/Lab2/Screenshot_20240713_163656.png)
+View of picorv32a in magic post floorplan
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163800.png)
+Closer look at power distribution lines and cells used.
+
+
+![](Screenshots/Lab2/Screenshot_20240713_163858.png)
+Closer look at the floorplan.       
+
+![](Screenshots/Lab2/Screenshot_20240713_164038.png)
+Trying to change the metal layers for horizontal and vertical IO.
+
+![](Screenshots/Lab2/Screenshot_20240713_164353.png)
+Flow failed due to incorrect env variable (documentation shows deprecated)
+Default is now layer 3 and 4 acoording to documents.
+
+![](Screenshots/Lab2/Screenshot_20240713_170544.png)
+Running placement.
+
+
+![](Screenshots/Lab2/Screenshot_20240713_170628.png)
+Post placement DEF file in magic. This is run inside the placement folder in the results directory.
+```
+magicsky lef read ../../tmp/merged.nom.lef def read picorv32a.def &
+```
+
+
+![](Screenshots/Lab2/Screenshot_20240713_170642.png)
+Closer look at the placed cells.
+
+
+![](Screenshots/Lab2/Screenshot_20240713_170838.png)
+Decaps present near IO.
+
+
+![](Screenshots/Lab2/Screenshot_20240713_170921.png)
+Another view of the placement.
 
