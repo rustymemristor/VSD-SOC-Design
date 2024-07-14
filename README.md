@@ -113,7 +113,7 @@ Created DEF file. The def file created has a priority order of
 It shows the area in microns, in the format ```DIE AREA (x0,y0) (x1, y1)``` We can calculate the die area by
 
 $$
-Die\;Area = 692,760\;\mu m \times 703,480\;\mu m = 487,263,728,000\;\mu m^2
+Die\Area = 692,760\\mu m \times 703,480\\mu m = 487,263,728,000\\mu m^2
 $$
 
 
@@ -135,11 +135,11 @@ Closer look at power distribution lines and cells used.
 Closer look at the floorplan.       
 
 ![](Screenshots/Lab2/Screenshot_20240713_164038.png)
-Trying to change the metal layers for horizontal and vertical IO.
+Trying to change the metal layers for horizontal and vertical IO. Done by varying the config.tcl. (Spaces were added between set and : in later runs)
 
 ![](Screenshots/Lab2/Screenshot_20240713_164353.png)
 Flow failed due to incorrect env variable (documentation shows deprecated)
-Default is now layer 3 and 4 acoording to documents.
+Default is now layer 3 and 4 according to documents. Also called VLAYER and HLAYER now.
 
 ![](Screenshots/Lab2/Screenshot_20240713_170544.png)
 Running placement.
