@@ -90,7 +90,3 @@ Tasks for lab 2 include
 
 
 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4ODEwMTkwXX0=
--->
