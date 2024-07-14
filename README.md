@@ -112,7 +112,7 @@ Created DEF file. The def file created has a priority order of
 ```
 It shows the area in microns, in the format ```DIE AREA (x0,y0) (x1, y1)``` We can calculate the die area by
 $$
-Die Area = 692,760 μm \times 703,480 μm = 487,263,728,000 μm^2
+Die\;Area = 692,760\;\mu m \times 703,480\;\mu m = 487,263,728,000\;\mu m^2
 $$
 
 
