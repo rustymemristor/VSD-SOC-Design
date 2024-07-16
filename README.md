@@ -262,7 +262,7 @@ x0 = 8.06728e-09, y0 = 0.659661
 Zoomed in value for
 Cell Rise propagation Delay
 ```math
-x0 = 6.15e-09, y0 = 1.65017<br/>
+x0 = 6.15e-09, y0 = 1.65017\\<br/>
 
 x0 = 6.18168e-09, y0 = 1.65017  
 ```
@@ -273,6 +273,7 @@ Zoomed in value for
 Cell Fall propagation Delay
 ```math
 x0 = 8.05332e-09, y0 = 1.64999<br/>
+
 x0 = 8.05003e-09, y0 = 1.65  
 ```
 
