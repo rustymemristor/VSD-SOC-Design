@@ -245,6 +245,7 @@ Rise Transition (20% of maximum value to 80% of maximum value)
 
 ```math
 x0 = 2.15506e-09, y0 = 0.659655
+
 x0 = 2.19803e-09, y0 = 2.63931
 ```
 
@@ -254,6 +255,7 @@ Zoomed in value for
 Fall Transition (80% of maximum value to 20% of maximum value)
 ```math
 x0 = 8.04014e-09, y0 = 2.63929
+
 x0 = 8.06728e-09, y0 = 0.659661
 
 
@@ -264,6 +266,7 @@ Zoomed in value for
 Cell Rise propagation Delay
 ```math
 x0 = 6.15e-09, y0 = 1.65017
+
 x0 = 6.18168e-09, y0 = 1.65017
 ```
 ![](Screenshots/Lab3/Screenshot_20240716_122522.png)
@@ -273,6 +276,7 @@ Zoomed in value for
 Cell Fall propagation Delay
 ```math
 x0 = 8.05332e-09, y0 = 1.64999
+
 x0 = 8.05003e-09, y0 = 1.65
 ```
 
