@@ -285,4 +285,70 @@ x0 = 8.05003e-09, y0 = 1.65
 
 Cell Fall Propagation Delay = 0.00329ns
 ```
+![](Screenshots/Lab3/Screenshot_20240716_165335.png)
+Downloading magic drc Violating files.
 
+![](Screenshots/Lab3/Screenshot_20240716_165655.png)
+Viewing Metal 3 layers.
+
+![](Screenshots/Lab3/Screenshot_20240716_165932.png)
+Using a command to display cause of DRC violation. First select by hovering the cursor over the cell in question, then pressing 's' in the TKcon type:
+```
+drc why
+```
+
+![](Screenshots/Lab3/Screenshot_20240716_170303.png)
+
+Opening the Poly file and viewing the layer and drc violation.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_170535.png)
+
+Initial SKY130.tech file poly.9 parameters.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_170538.png)
+
+Modified Parameters.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_170700.png)
+
+Modified Parameters.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_171811.png)
+
+Checking to see if DRC is violated for all test cases.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_172550.png)
+
+Opening nwell.mag and viewing the CIF.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_172950.png)
+
+Viewing the implementation of templayers which are the formations present only for the construction of the final layers.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_175615.png)
+
+Initial N well parameters for DRC violations.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_180925.png)
+
+Modified parameters for proper DRC violation in N well.
+
+
+![](Screenshots/Lab3/Screenshot_20240716_181307.png)
+
+Violation vs fixed implementation of N Well DRC.
+
+## Lab 4 
+Tasks for lab 4 include
+1. 
+2.
+3.
+4.
