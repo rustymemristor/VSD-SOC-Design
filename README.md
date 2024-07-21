@@ -348,7 +348,8 @@ Violation vs fixed implementation of N Well DRC.
 
 ## Lab 4 
 Tasks for lab 4 include
-1. 
-2.
-3.
-4.
+1. Adding our previously characterized inverter cell in our layout.
+2. Fixing any negative slack.
+3. Performing Clock Tree Synthesis (CTS)
+4. Finding final hold and sample slack as well as skew.
+
