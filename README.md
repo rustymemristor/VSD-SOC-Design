@@ -431,3 +431,35 @@ Folder after generation of mag file for insertion (rusty_inv.mag)
 
 
 ![](Screenshots/Lab4/Screenshot_20240721_114351.png)
+
+
+## Lab 5
+Tasks for lab 5 include
+1. Finalizing design routing.
+2. Adjusting design for DRC pass.
+
+![](Screenshots/Lab5/Screenshot_20240721_192620.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_192745.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_192801.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_194846.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_201629.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_201718.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_201718.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240721_204126.png)
+
+
+![](Screenshots/Lab5/Screenshot_20240722_090027.png)
