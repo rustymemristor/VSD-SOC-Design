@@ -1,0 +1,2 @@
+[ERROR ODB-0391] order_wires failed: net _01613_, shorts to another term at wire point (310500 112880)
+Error: repair_antennas.tcl, 19 ODB-0391

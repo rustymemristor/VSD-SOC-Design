@@ -1,0 +1,122 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/floorplan/picorv32a.odb'…
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts-slowest.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts-slowest.lib line 24, default_fanout_load is 0.0.
+read_liberty -corner Typical /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts.lib line 23, default_fanout_load is 0.0.
+read_liberty -corner Fastest /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts-fastest.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/tmp/cts/cts-fastest.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Running Clock Tree Synthesis...
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+                    sky130_fd_sc_hd__clkbuf_8
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 1613 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 1613.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 25 and clustering diameter of 50.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 226.
+[INFO CTS-0024]  Normalized sink region: [(0.535294, 10.6149), (49.5949, 50.0551)].
+[INFO CTS-0025]     Width:  49.0596.
+[INFO CTS-0026]     Height: 39.4401.
+ Level 1
+    Direction: Horizontal
+    Sinks per sub-region: 113
+    Sub-region size: 24.5298 X 39.4401
+[INFO CTS-0034]     Segment length (rounded): 12.
+ Level 2
+    Direction: Vertical
+    Sinks per sub-region: 57
+    Sub-region size: 24.5298 X 19.7201
+[INFO CTS-0034]     Segment length (rounded): 10.
+ Level 3
+    Direction: Horizontal
+    Sinks per sub-region: 29
+    Sub-region size: 12.2649 X 19.7201
+[INFO CTS-0034]     Segment length (rounded): 6.
+ Level 4
+    Direction: Vertical
+    Sinks per sub-region: 15
+    Sub-region size: 12.2649 X 9.8600
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 5
+    Direction: Horizontal
+    Sinks per sub-region: 8
+    Sub-region size: 6.1324 X 9.8600
+[INFO CTS-0034]     Segment length (rounded): 4.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 226.
+[INFO CTS-0018]     Created 254 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 3.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 4.
+[INFO CTS-0015]     Created 254 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:6, 3:16, 4:17, 5:21, 6:32, 7:43, 8:39, 9:25, 10:20, 11:13, 12:8, 13:3, 14:3, 15:1, 16:2..
+[INFO CTS-0017]     Max level of the clock tree: 5.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 1613
+[INFO CTS-0100]  Leaf buffers 217
+[INFO CTS-0101]  Average sink wire length 1147.90 um
+[INFO CTS-0102]  Path depth 3 - 4
+[INFO]: Repairing long wires on clock nets...
+[INFO RSZ-0058] Using max wire length 4508um.
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.odb'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.def'…
+Writing timing constraints to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.sdc'…
+[INFO]: Legalizing...
+Placement Analysis
+---------------------------------
+total displacement       1081.7 u
+average displacement        0.0 u
+max displacement            8.0 u
+original HPWL          769504.3 u
+legalized HPWL         781783.6 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 6270 instances
+[INFO DPL-0021] HPWL before          781783.6 u
+[INFO DPL-0022] HPWL after           769610.1 u
+[INFO DPL-0023] HPWL delta               -1.6 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.odb'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.def'…
+Writing timing constraints to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.52.44/results/cts/picorv32a.sdc'…
+cts_report
+[INFO CTS-0003] Total number of Clock Roots: 1.
+[INFO CTS-0004] Total number of Buffers Inserted: 254.
+[INFO CTS-0005] Total number of Clock Subnets: 254.
+[INFO CTS-0006] Total number of Sinks: 1613.
+cts_report_end

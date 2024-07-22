@@ -1,0 +1,206 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/2024.07.21_14.25.58/results/floorplan/picorv32a.odb'…
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib line 24, default_fanout_load is 0.0.
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+read_liberty -corner Fastest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/picorv32a/runs/2024.07.21_14.25.58/tmp/routing/resizer-routing-design-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 255 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 18
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 26225
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     203580         98951          51.39%
+met2       Vertical       151818         99911          34.19%
+met3       Horizontal     101790         70121          31.11%
+met4       Vertical        60909         38418          36.93%
+met5       Horizontal      20298          9702          52.20%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 96789
+[INFO GRT-0198] Via related Steiner nodes: 2187
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 124169
+[INFO GRT-0112] Final usage 3D: 494051
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             98951         52131           52.68%             0 /  0 /  0
+met2             99911         47654           47.70%             0 /  0 /  0
+met3             70121         12894           18.39%             0 /  0 /  0
+met4             38418          8572           22.31%             0 /  0 /  0
+met5              9702           293            3.02%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           317103        121544           38.33%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1136243 um
+[INFO GRT-0014] Routed nets: 17164
+[INFO]: Setting RC values...
+[INFO RSZ-0058] Using max wire length 4508um.
+[WARNING DPL-0037] Use remove_fillers before detailed placement.
+[INFO DPL-0034] Detailed placement failed on the following 120 instances:
+[INFO DPL-0035]  ANTENNA_47
+[INFO DPL-0035]  ANTENNA_307
+[INFO DPL-0035]  ANTENNA_307
+[INFO DPL-0035]  ANTENNA_309
+[INFO DPL-0035]  ANTENNA_309
+[INFO DPL-0035]  ANTENNA_309
+[INFO DPL-0035]  ANTENNA_20
+[INFO DPL-0035]  ANTENNA_20
+[INFO DPL-0035]  ANTENNA_77
+[INFO DPL-0035]  ANTENNA_77
+[INFO DPL-0035]  ANTENNA_51
+[INFO DPL-0035]  ANTENNA_51
+[INFO DPL-0035]  ANTENNA_119
+[INFO DPL-0035]  ANTENNA_119
+[INFO DPL-0035]  ANTENNA_80
+[INFO DPL-0035]  ANTENNA_80
+[INFO DPL-0035]  ANTENNA_248
+[INFO DPL-0035]  ANTENNA_249
+[INFO DPL-0035]  ANTENNA_249
+[INFO DPL-0035]  ANTENNA_260
+[INFO DPL-0035]  ANTENNA_260
+[INFO DPL-0035]  ANTENNA_260
+[INFO DPL-0035]  ANTENNA_251
+[INFO DPL-0035]  ANTENNA_534
+[INFO DPL-0035]  ANTENNA_534
+[INFO DPL-0035]  ANTENNA_90
+[INFO DPL-0035]  ANTENNA_90
+[INFO DPL-0035]  ANTENNA_250
+[INFO DPL-0035]  ANTENNA_391
+[INFO DPL-0035]  ANTENNA_343
+[INFO DPL-0035]  ANTENNA_343
+[INFO DPL-0035]  ANTENNA_343
+[INFO DPL-0035]  ANTENNA_99
+[INFO DPL-0035]  ANTENNA_99
+[INFO DPL-0035]  ANTENNA_115
+[INFO DPL-0035]  ANTENNA_115
+[INFO DPL-0035]  ANTENNA_360
+[INFO DPL-0035]  ANTENNA_360
+[INFO DPL-0035]  ANTENNA_360
+[INFO DPL-0035]  ANTENNA_360
+[INFO DPL-0035]  ANTENNA_448
+[INFO DPL-0035]  ANTENNA_448
+[INFO DPL-0035]  ANTENNA_120
+[INFO DPL-0035]  ANTENNA_4
+[INFO DPL-0035]  ANTENNA_4
+[INFO DPL-0035]  ANTENNA_10
+[INFO DPL-0035]  ANTENNA_92
+[INFO DPL-0035]  ANTENNA_408
+[INFO DPL-0035]  ANTENNA_408
+[INFO DPL-0035]  ANTENNA_85
+[INFO DPL-0035]  ANTENNA_85
+[INFO DPL-0035]  ANTENNA_85
+[INFO DPL-0035]  ANTENNA_385
+[INFO DPL-0035]  ANTENNA_385
+[INFO DPL-0035]  ANTENNA_363
+[INFO DPL-0035]  ANTENNA_363
+[INFO DPL-0035]  ANTENNA_397
+[INFO DPL-0035]  ANTENNA_397
+[INFO DPL-0035]  ANTENNA_397
+[INFO DPL-0035]  FILLER_0_17_1217
+[INFO DPL-0035]  FILLER_0_22_1258
+[INFO DPL-0035]  FILLER_0_33_1324
+[INFO DPL-0035]  FILLER_0_50_1426
+[INFO DPL-0035]  FILLER_0_12_1202
+[INFO DPL-0035]  FILLER_0_8_1179
+[INFO DPL-0035]  FILLER_0_45_1398
+[INFO DPL-0035]  FILLER_0_7_1174
+[INFO DPL-0035]  FILLER_0_227_184
+[INFO DPL-0035]  FILLER_0_22_236
+[INFO DPL-0035]  FILLER_0_10_306
+[INFO DPL-0035]  FILLER_0_15_1230
+[INFO DPL-0035]  FILLER_0_33_166
+[INFO DPL-0035]  FILLER_0_51_57
+[INFO DPL-0035]  ANTENNA_417
+[INFO DPL-0035]  ANTENNA_417
+[INFO DPL-0035]  ANTENNA_417
+[INFO DPL-0035]  FILLER_0_36_1360
+[INFO DPL-0035]  FILLER_0_8_1195
+[INFO DPL-0035]  FILLER_0_16_1245
+[INFO DPL-0035]  ANTENNA_369
+[INFO DPL-0035]  ANTENNA_369
+[INFO DPL-0035]  FILLER_0_13_1230
+[INFO DPL-0035]  FILLER_0_10_1216
+[INFO DPL-0035]  ANTENNA_425
+[INFO DPL-0035]  ANTENNA_425
+[INFO DPL-0035]  ANTENNA_425
+[INFO DPL-0035]  FILLER_0_13_1241
+[INFO DPL-0035]  ANTENNA_381
+[INFO DPL-0035]  ANTENNA_390
+[INFO DPL-0035]  ANTENNA_390
+[INFO DPL-0035]  FILLER_0_31_1358
+[INFO DPL-0035]  FILLER_0_18_1283
+[INFO DPL-0035]  FILLER_0_4_1202
+[INFO DPL-0035]  FILLER_0_227_136
+[INFO DPL-0035]  FILLER_0_227_136
+[INFO DPL-0035]  ANTENNA_438
+[INFO DPL-0035]  ANTENNA_26
+[INFO DPL-0035]  ANTENNA_26
+[INFO DPL-0035]  ANTENNA_389
+[INFO DPL-0035]  FILLER_0_235_1342
+[INFO DPL-0035]  FILLER_0_235_1342
+[INFO DPL-0035]  ANTENNA_374
+[INFO DPL-0035]  ANTENNA_374
+[INFO DPL-0035]  ANTENNA_374
+[INFO DPL-0035]  FILLER_0_214_26
+[INFO DPL-0035]  ANTENNA_539
+[INFO DPL-0035]  ANTENNA_564
+[INFO DPL-0035]  ANTENNA_376
+[INFO DPL-0035]  ANTENNA_376
+[INFO DPL-0035]  ANTENNA_403
+[INFO DPL-0035]  ANTENNA_403
+[INFO DPL-0035]  ANTENNA_368
+[INFO DPL-0035]  ANTENNA_427
+[INFO DPL-0035]  ANTENNA_372
+[INFO DPL-0035]  ANTENNA_372
+[INFO DPL-0035]  ANTENNA_416
+[INFO DPL-0035]  ANTENNA_392
+[INFO DPL-0035]  ANTENNA_392
+[INFO DPL-0035]  ANTENNA_351
+[INFO DPL-0035]  FILLER_0_248_13
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer_routing_design.tcl, 67 DPL-0036

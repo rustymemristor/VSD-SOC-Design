@@ -1,0 +1,67 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/9-global.odb'…
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib line 24, default_fanout_load is 0.0.
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+read_liberty -corner Fastest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO RSZ-0027] Inserted 66 input buffers.
+[INFO RSZ-0028] Inserted 266 output buffers.
+[INFO RSZ-0058] Using max wire length 4508um.
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _28322_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _28331_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _17093_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _15208_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _17070_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _14992_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _14816_
+[WARNING ODB-0045] Failed(termSize) to swap: rusty_inv -> sky130_fd_sc_hd__inv_2 _14662_
+[INFO RSZ-0034] Found 36 slew violations.
+[INFO RSZ-0038] Inserted 41 buffers in 36 nets.
+[INFO RSZ-0039] Resized 15031 instances.
+[INFO RSZ-0042] Inserted 41 tie sky130_fd_sc_hd__conb_1 instances.
+Placement Analysis
+---------------------------------
+total displacement      29989.5 u
+average displacement        1.3 u
+max displacement           11.5 u
+original HPWL          741981.9 u
+legalized HPWL         762591.5 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 6116 instances
+[INFO DPL-0021] HPWL before          762591.5 u
+[INFO DPL-0022] HPWL after           750954.3 u
+[INFO DPL-0023] HPWL delta               -1.5 %
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/11-resizer.odb'…
+Writing netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/11-resizer.nl.v'…
+Writing powered netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/11-resizer.pnl.v'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/11-resizer.def'…
+Writing timing constraints to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/placement/11-resizer.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 158075 u^2 34% utilization.
+area_report_end

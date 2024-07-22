@@ -1,0 +1,113 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/17-picorv32a.odb'…
+define_corners Slowest Typical Fastest
+read_liberty -corner Slowest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib line 24, default_fanout_load is 0.0.
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+read_liberty -corner Fastest /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose -congestion_report_file /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/routing/resizer-routing-timing-congestion.rpt
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 1 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 1614
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 26225
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     203580         98940          51.40%
+met2       Vertical       151818         99911          34.19%
+met3       Horizontal     101790         70125          31.11%
+met4       Vertical        60909         38418          36.93%
+met5       Horizontal      20298          9702          52.20%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 94472
+[INFO GRT-0198] Via related Steiner nodes: 2166
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 121160
+[INFO GRT-0112] Final usage 3D: 483101
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             98940         52046           52.60%             0 /  0 /  0
+met2             99911         47243           47.29%             0 /  0 /  0
+met3             70125         11810           16.84%             0 /  0 /  0
+met4             38418          8074           21.02%             0 /  0 /  0
+met5              9702           448            4.62%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           317096        119621           37.72%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1117703 um
+[INFO GRT-0014] Routed nets: 16854
+[INFO]: Setting RC values...
+[INFO RSZ-0094] Found 277 endpoints with setup violations.
+[INFO RSZ-0041] Resized 349 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0046] Found 1574 endpoints with hold violations.
+[WARNING RSZ-0064] Unable to repair all hold checks within margin.
+[INFO RSZ-0032] Inserted 7705 hold buffers.
+Placement Analysis
+---------------------------------
+total displacement     130443.4 u
+average displacement        4.1 u
+max displacement          137.0 u
+original HPWL          820353.5 u
+legalized HPWL         944415.3 u
+delta HPWL                   15 %
+
+[INFO DPL-0020] Mirrored 11065 instances
+[INFO DPL-0021] HPWL before          944415.3 u
+[INFO DPL-0022] HPWL after           921481.6 u
+[INFO DPL-0023] HPWL delta               -2.4 %
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/19-picorv32a.odb'…
+Writing netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/19-picorv32a.nl.v'…
+Writing powered netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/19-picorv32a.pnl.v'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/19-picorv32a.def'…
+Writing timing constraints to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/19-picorv32a.sdc'…
+area_report
+
+===========================================================================
+report_design_area
+============================================================================
+Design area 235806 u^2 51% utilization.
+area_report_end

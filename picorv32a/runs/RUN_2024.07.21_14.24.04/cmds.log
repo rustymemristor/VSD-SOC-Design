@@ -1,0 +1,34 @@
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/layers.list /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.min.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.min.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.min.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.max.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.max.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.max.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/merged.lib --name sky130A_merged /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/trimmed.lib /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/merged.lib}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/srujan/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/routing/config.tracks}"
+
+Sun Jul 21 14:24:05 +0000 2024 - Executing "{echo {OpenLane a0e805e70f9dca8e80286ed807195008a2fc36c0} > /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/OPENLANE_VERSION}"
+
+Sun Jul 21 14:24:57 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -i /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef /openlane/designs/picorv32a/src/rusty_inv.lef -o /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef.new}"
+
+Sun Jul 21 14:24:57 +0000 2024 - Executing "{mv /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef.new /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/merged.nom.lef}"
+
+Sun Jul 21 14:25:07 +0000 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib > /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/25-sky130_fd_sc_hd__typical.no_pg.lib}"
+
+Sun Jul 21 14:25:08 +0000 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/trimmed.lib > /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/tmp/synthesis/25-trimmed.no_pg.lib}"
+
+Sun Jul 21 14:25:08 +0000 2024 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/logs/synthesis/25-synthesis.log"
+
+Sun Jul 21 14:25:08 +0000 2024 - Executing "{yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.21_14.24.04/logs/synthesis/25-synthesis.log}"
+

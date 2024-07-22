@@ -1,0 +1,3 @@
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING GPL-0150] -skip_io will disable timing driven mode.
+[WARNING GPL-0151] -skip_io will disable routability driven mode.

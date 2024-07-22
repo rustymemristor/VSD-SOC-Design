@@ -1,0 +1,23 @@
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING GRT-0026] Missing route to pin _25429_/A.
+[WARNING GRT-0026] Missing route to pin _19375_/Y.
+[WARNING GRT-0026] Missing route to pin _19445_/D.
+[WARNING GRT-0026] Missing route to pin max_cap6/A.
+[WARNING GRT-0026] Missing route to pin max_cap365/A.
+[WARNING GRT-0026] Missing route to pin _19445_/Y.
+[WARNING GRT-0026] Missing route to pin _19528_/A1.
+[WARNING GRT-0026] Missing route to pin _19528_/A2.
+[WARNING GRT-0026] Missing route to pin _20154_/A.
+[WARNING GRT-0026] Missing route to pin _20020_/B1.
+[WARNING GRT-0026] Missing route to pin _20020_/C1.
+[WARNING GRT-0026] Missing route to pin _20154_/B.
+[WARNING GRT-0026] Missing route to pin _20042_/A1.
+[WARNING GRT-0026] Missing route to pin _20042_/A2.
+[WARNING GRT-0026] Missing route to pin _20042_/B1.
+[WARNING GRT-0026] Missing route to pin _20042_/B2.
+[WARNING GRT-0026] Missing route to pin _20154_/Y.
+[WARNING GRT-0026] Missing route to pin max_cap340/A.
+[WARNING GRT-0026] Missing route to pin max_cap340/X.
+[WARNING GRT-0026] Missing route to pin max_cap365/X.
+Warning: There are 41 unconstrained endpoints.
+[WARNING] Did not save OpenROAD database!

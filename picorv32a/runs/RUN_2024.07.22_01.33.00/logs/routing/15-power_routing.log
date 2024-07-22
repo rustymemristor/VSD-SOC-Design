@@ -1,0 +1,56 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Found 25 VIA GENERATE rules
+Added L1M1_PR
+Skipping L1M1_PR_R
+Skipping L1M1_PR_M
+Skipping L1M1_PR_MR
+Skipping L1M1_PR_C
+[85, 55]
+Added M1M2_PR
+Skipping M1M2_PR_R
+Skipping M1M2_PR_M
+Skipping M1M2_PR_MR
+Skipping M1M2_PR_C
+Added M2M3_PR
+Skipping M2M3_PR_R
+Skipping M2M3_PR_M
+Skipping M2M3_PR_MR
+Skipping M2M3_PR_C
+Added M3M4_PR
+Skipping M3M4_PR_R
+Skipping M3M4_PR_M
+Skipping M3M4_PR_MR
+Skipping M3M4_PR_C
+Added M4M5_PR
+Skipping M4M5_PR_R
+Skipping M4M5_PR_M
+Skipping M4M5_PR_MR
+Skipping M4M5_PR_C
+Top-level design name: picorv32a
+Traceback (most recent call last):
+  File "/openlane/scripts/odbpy/power_utils.py", line 1148, in <module>
+    cli()
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/odbpy/reader.py", line 90, in wrapper
+    function(**kwargs)
+  File "/openlane/scripts/odbpy/power_utils.py", line 847, in power_route
+    assert len({box["type"]: None for box in ALL_BOXES}) == 3
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

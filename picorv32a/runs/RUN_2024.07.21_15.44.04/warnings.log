@@ -1,0 +1,5 @@
+[WARNING]: SYNTH_MAX_FANOUT is now deprecated; use MAX_FANOUT_CONSTRAINT instead.
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: The command global_routing_cugr is now deprecated; use global_routing_fastroute instead.
+[WARNING]: The command detailed_routing_drcu is now deprecated; use detailed_routing_tritonroute instead.

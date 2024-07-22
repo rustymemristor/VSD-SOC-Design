@@ -1,0 +1,5 @@
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib line 24, default_fanout_load is 0.0.
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib line 23, default_fanout_load is 0.0.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[WARNING RSZ-0064] Unable to repair all hold checks within margin.

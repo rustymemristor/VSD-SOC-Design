@@ -1,0 +1,126 @@
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/layers.list /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.min.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.min.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.min.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.max.lef -i /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/srujan/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.max.lef -i /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.max.lef /openlane/designs/picorv32a/src/rusty_inv.lef |& tee /dev/null}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/mergeLib.py --output /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/merged.lib --name sky130A_merged /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/trimmed.lib /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/merged.lib}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts.lib.exclude.list --output /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts.lib /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-fastest.lib /openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-slowest.lib /openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib}"
+
+Mon Jul 22 03:41:18 +0000 2024 - Executing "{python3 /openlane/scripts/new_tracks.py -i /home/srujan/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/routing/config.tracks}"
+
+Mon Jul 22 03:41:19 +0000 2024 - Executing "{echo {OpenLane a0e805e70f9dca8e80286ed807195008a2fc36c0} > /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/OPENLANE_VERSION}"
+
+Mon Jul 22 03:41:50 +0000 2024 - Executing "{/openlane/scripts/mergeLef.py -i /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef /openlane/designs/picorv32a/src/rusty_inv.lef -o /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef.new}"
+
+Mon Jul 22 03:41:50 +0000 2024 - Executing "{mv /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef.new /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef}"
+
+Mon Jul 22 03:42:10 +0000 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib > /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/1-sky130_fd_sc_hd__typical.no_pg.lib}"
+
+Mon Jul 22 03:42:10 +0000 2024 - Executing "{sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/trimmed.lib > /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/synthesis/1-trimmed.no_pg.lib}"
+
+Mon Jul 22 03:42:10 +0000 2024 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/synthesis/1-synthesis.log"
+
+Mon Jul 22 03:42:10 +0000 2024 - Executing "{yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/synthesis/1-synthesis.log}"
+
+Mon Jul 22 03:42:33 +0000 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/picorv32a\/runs\/RUN_2024.07.22_03.41.17\/results\/synthesis\/picorv32a.v/} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/config.tcl}"
+
+Mon Jul 22 03:42:33 +0000 2024 - Executing "{sed -i.bak /defparam/d /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/results/synthesis/picorv32a.v}"
+
+Mon Jul 22 03:42:33 +0000 2024 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/synthesis/2-sta.log"
+
+Mon Jul 22 03:42:33 +0000 2024 - Executing "{sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/synthesis/2-sta.log}"
+
+Mon Jul 22 03:42:38 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/3-initial_fp.log"
+
+Mon Jul 22 03:42:38 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/3-initial_fp.log}"
+
+Mon Jul 22 03:42:39 +0000 2024 - Executing "{openroad -exit -no_init -python /openlane/scripts/odbpy/defutil.py extract_core_dims --output-data /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/dimensions.txt --input-lef /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/merged.nom.lef /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/floorplan/3-initial_fp.def}"
+
+Mon Jul 22 03:42:45 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/4-io.log"
+
+Mon Jul 22 03:42:45 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/4-io.log}"
+
+Mon Jul 22 03:42:51 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/5-tap.log"
+
+Mon Jul 22 03:42:51 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/5-tap.log}"
+
+Mon Jul 22 03:43:07 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/5-global_skip_io.log"
+
+Mon Jul 22 03:43:07 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/5-global_skip_io.log}"
+
+Mon Jul 22 03:43:09 +0000 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/picorv32a\/runs\/RUN_2024.07.22_03.41.17\/tmp\/placement\/6-global_skip_io.nl.v/} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/config.tcl}"
+
+Mon Jul 22 03:43:10 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/7-gpl_sta.log"
+
+Mon Jul 22 03:43:10 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/7-gpl_sta.log}"
+
+Mon Jul 22 03:43:13 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/8-io.log"
+
+Mon Jul 22 03:43:13 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/8-io.log}"
+
+Mon Jul 22 03:43:13 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/8-global.log"
+
+Mon Jul 22 03:43:13 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/gpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/8-global.log}"
+
+Mon Jul 22 03:43:16 +0000 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/picorv32a\/runs\/RUN_2024.07.22_03.41.17\/tmp\/placement\/9-global.nl.v/} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/config.tcl}"
+
+Mon Jul 22 03:43:16 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/10-gpl_sta.log"
+
+Mon Jul 22 03:43:16 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/10-gpl_sta.log}"
+
+Mon Jul 22 03:43:19 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/11-resizer.log"
+
+Mon Jul 22 03:43:19 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/resizer.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/11-resizer.log}"
+
+Mon Jul 22 03:43:29 +0000 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/picorv32a\/runs\/RUN_2024.07.22_03.41.17\/tmp\/placement\/11-resizer.nl.v/} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/config.tcl}"
+
+Mon Jul 22 03:43:29 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/12-detailed.log"
+
+Mon Jul 22 03:43:29 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/dpl.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/12-detailed.log}"
+
+Mon Jul 22 03:43:30 +0000 2024 - Executing "{sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/picorv32a\/runs\/RUN_2024.07.22_03.41.17\/results\/placement\/picorv32a.nl.v/} /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/config.tcl}"
+
+Mon Jul 22 03:43:30 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/13-dpl_sta.log"
+
+Mon Jul 22 03:43:30 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/placement/13-dpl_sta.log}"
+
+Mon Jul 22 03:44:26 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/cts/14-cts.log"
+
+Mon Jul 22 03:44:26 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/cts.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/cts/14-cts.log}"
+
+Mon Jul 22 03:44:37 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/cts/15-cts_sta.log"
+
+Mon Jul 22 03:44:37 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/cts/15-cts_sta.log}"
+
+Mon Jul 22 03:47:15 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/16-pdn.log"
+
+Mon Jul 22 03:47:15 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/16-pdn.log}"
+
+Mon Jul 22 03:47:37 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/17-pdn.log"
+
+Mon Jul 22 03:47:37 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/17-pdn.log}"
+
+Mon Jul 22 03:47:41 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/18-pdn.log"
+
+Mon Jul 22 03:47:41 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/floorplan/18-pdn.log}"
+
+Mon Jul 22 03:48:43 +0000 2024 - Executing "openroad -exit /openlane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/routing/19-resizer_design.log"
+
+Mon Jul 22 03:48:43 +0000 2024 - Executing "{openroad -exit /openlane/scripts/openroad/resizer_routing_design.tcl |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/logs/routing/19-resizer_design.log}"
+

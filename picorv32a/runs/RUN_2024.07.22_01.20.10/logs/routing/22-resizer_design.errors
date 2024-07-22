@@ -1,0 +1,2 @@
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119

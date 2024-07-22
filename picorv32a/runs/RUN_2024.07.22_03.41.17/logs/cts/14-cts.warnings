@@ -1,0 +1,3 @@
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-slowest.lib line 24, default_fanout_load is 0.0.
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts.lib line 23, default_fanout_load is 0.0.
+[WARNING STA-1173] /openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/cts/cts-fastest.lib line 23, default_fanout_load is 0.0.

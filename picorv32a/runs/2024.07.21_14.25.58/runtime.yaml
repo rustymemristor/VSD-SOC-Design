@@ -1,0 +1,75 @@
+- status: 0 - openlane design prep
+  runtime_s: 1.33
+  runtime_ts: 0h0m1s326ms
+- status: 2 - synthesis - yosys
+  runtime_s: 18.14
+  runtime_ts: 0h0m18s143ms
+- status: 4 - floorplan initialization - openroad
+  runtime_s: 0.94
+  runtime_ts: 0h0m0s939ms
+- status: 5 - ioplace - openroad
+  runtime_s: 0.74
+  runtime_ts: 0h0m0s736ms
+- status: 6 - tap/decap insertion - openroad
+  runtime_s: 0.78
+  runtime_ts: 0h0m0s783ms
+- status: 7 - global placement - openroad
+  runtime_s: 2.32
+  runtime_ts: 0h0m2s322ms
+- status: 8 - sta - openroad
+  runtime_s: 2.26
+  runtime_ts: 0h0m2s256ms
+- status: 9 - ioplace - openroad
+  runtime_s: 0.53
+  runtime_ts: 0h0m0s534ms
+- status: 10 - global placement - openroad
+  runtime_s: 2.05
+  runtime_ts: 0h0m2s51ms
+- status: 11 - sta - openroad
+  runtime_s: 2.28
+  runtime_ts: 0h0m2s278ms
+- status: 12 - resizer design optimizations - openroad
+  runtime_s: 6.61
+  runtime_ts: 0h0m6s613ms
+- status: 13 - detailed placement - openroad
+  runtime_s: 0.69
+  runtime_ts: 0h0m0s693ms
+- status: 14 - sta - openroad
+  runtime_s: 2.3
+  runtime_ts: 0h0m2s299ms
+- status: 15 - cts - openroad
+  runtime_s: 8.05
+  runtime_ts: 0h0m8s50ms
+- status: 16 - sta - openroad
+  runtime_s: 3.11
+  runtime_ts: 0h0m3s112ms
+- status: 18 - pdn generation - openroad
+  runtime_s: 0.99
+  runtime_ts: 0h0m0s987ms
+- status: 19 - resizer design optimizations - openroad
+  runtime_s: 9.06
+  runtime_ts: 0h0m9s61ms
+- status: 20 - sta - openroad
+  runtime_s: 3.29
+  runtime_ts: 0h0m3s291ms
+- status: 21 - resizer timing optimizations - openroad
+  runtime_s: 8.72
+  runtime_ts: 0h0m8s717ms
+- status: 22 - sta - openroad
+  runtime_s: 3.35
+  runtime_ts: 0h0m3s347ms
+- status: 24 - write verilog - openroad
+  runtime_s: 0.51
+  runtime_ts: 0h0m0s506ms
+- status: 25 - sta - openroad
+  runtime_s: 1.9
+  runtime_ts: 0h0m1s903ms
+- status: 25 - global routing - openroad
+  runtime_s: 1.9
+  runtime_ts: 0h0m1s903ms
+- status: 26 - fill insertion - openroad
+  runtime_s: 0.98
+  runtime_ts: 0h0m0s982ms
+- status: 30 - pdn generation - openroad
+  runtime_s: 1.93
+  runtime_ts: 0h0m1s929ms

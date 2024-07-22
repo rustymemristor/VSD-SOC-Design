@@ -1,0 +1,45 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/pdn.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.22_01.20.10/logs/floorplan/14-pdn.log
+[ERROR]: Last 10 lines:
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+Error: pdn_cfg.tcl, 41 can't read "::env(VDD_NETS)": no such variable
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/repair_antennas.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.22_01.20.10/logs/routing/21-global.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 127146
+[INFO GRT-0198] Via related Steiner nodes: 2300
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 171208
+[INFO GRT-0112] Final usage 3D: 665214
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/routing/groute-congestion.rpt in the DRC viewer.
+Error: grt.tcl, 29 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.22_01.20.10/logs/routing/22-resizer_design.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 127172
+[INFO GRT-0198] Via related Steiner nodes: 2320
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 171342
+[INFO GRT-0112] Final usage 3D: 665983
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.22_01.20.10/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...

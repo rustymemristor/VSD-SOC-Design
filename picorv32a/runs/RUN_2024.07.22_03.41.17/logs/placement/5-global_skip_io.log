@@ -1,0 +1,110 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/floorplan/5-tapcell.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[WARNING GPL-0150] -skip_io will disable timing driven mode.
+[WARNING GPL-0151] -skip_io will disable routability driven mode.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 784760 788800
+[INFO GPL-0006] NumInstances: 31191
+[INFO GPL-0007] NumPlaceInstances: 21979
+[INFO GPL-0008] NumFixedInstances: 9212
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 22081
+[INFO GPL-0011] NumPins: 83588
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 790355 801075
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 784760 788800
+[INFO GPL-0016] CoreArea: 606186380800
+[INFO GPL-0017] NonPlaceInstsArea: 12957427200
+[INFO GPL-0018] PlaceInstsArea: 212565116800
+[INFO GPL-0019] Util(%): 35.83
+[INFO GPL-0020] StdInstsArea: 212565116800
+[INFO GPL-0021] MacroInstsArea: 0
+[INFO GPL-0031] FillerInit: NumGCells: 24623
+[INFO GPL-0032] FillerInit: NumGNets: 22081
+[INFO GPL-0033] FillerInit: NumGPins: 83588
+[INFO GPL-0023] TargetDensity: 0.40
+[INFO GPL-0024] AveragePlaceInstArea: 9671282
+[INFO GPL-0025] IdealBinArea: 24178204
+[INFO GPL-0026] IdealBinCnt: 25071
+[INFO GPL-0027] TotalBinArea: 606186380800
+[INFO GPL-0028] BinCnt: 128 128
+[INFO GPL-0029] BinSize: 6088 6078
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter: 1 overflow: 0.99934 HPWL: 61572499
+[NesterovSolve] Iter: 10 overflow: 0.999067 HPWL: 41988751
+[NesterovSolve] Iter: 20 overflow: 0.999067 HPWL: 41692978
+[NesterovSolve] Iter: 30 overflow: 0.999067 HPWL: 41604053
+[NesterovSolve] Iter: 40 overflow: 0.999067 HPWL: 41584650
+[NesterovSolve] Iter: 50 overflow: 0.999067 HPWL: 41584087
+[NesterovSolve] Iter: 60 overflow: 0.999067 HPWL: 41588274
+[NesterovSolve] Iter: 70 overflow: 0.999067 HPWL: 41594515
+[NesterovSolve] Iter: 80 overflow: 0.999067 HPWL: 41608598
+[NesterovSolve] Iter: 90 overflow: 0.999054 HPWL: 41651682
+[NesterovSolve] Iter: 100 overflow: 0.998974 HPWL: 41815086
+[NesterovSolve] Iter: 110 overflow: 0.998468 HPWL: 42453623
+[NesterovSolve] Iter: 120 overflow: 0.997878 HPWL: 44736534
+[NesterovSolve] Iter: 130 overflow: 0.99679 HPWL: 51560928
+[NesterovSolve] Iter: 140 overflow: 0.995542 HPWL: 66343766
+[NesterovSolve] Iter: 150 overflow: 0.993647 HPWL: 84221949
+[NesterovSolve] Iter: 160 overflow: 0.99117 HPWL: 101447955
+[NesterovSolve] Iter: 170 overflow: 0.9878 HPWL: 121517805
+[NesterovSolve] Iter: 180 overflow: 0.982264 HPWL: 148263474
+[NesterovSolve] Iter: 190 overflow: 0.975644 HPWL: 182978261
+[NesterovSolve] Iter: 200 overflow: 0.966991 HPWL: 225957294
+[NesterovSolve] Iter: 210 overflow: 0.953765 HPWL: 276397087
+[NesterovSolve] Iter: 220 overflow: 0.93159 HPWL: 333416615
+[NesterovSolve] Iter: 230 overflow: 0.905768 HPWL: 394563868
+[NesterovSolve] Iter: 240 overflow: 0.877697 HPWL: 455504400
+[NesterovSolve] Iter: 250 overflow: 0.848535 HPWL: 515860064
+[NesterovSolve] Iter: 260 overflow: 0.813418 HPWL: 579605746
+[NesterovSolve] Iter: 270 overflow: 0.772206 HPWL: 642788925
+[NesterovSolve] Iter: 280 overflow: 0.729955 HPWL: 714826373
+[NesterovSolve] Iter: 290 overflow: 0.684459 HPWL: 784326463
+[NesterovSolve] Iter: 300 overflow: 0.639233 HPWL: 846699382
+[NesterovSolve] Iter: 310 overflow: 0.58546 HPWL: 910746136
+[NesterovSolve] Iter: 320 overflow: 0.535877 HPWL: 973579693
+[NesterovSolve] Iter: 330 overflow: 0.481151 HPWL: 1038766359
+[NesterovSolve] Iter: 340 overflow: 0.425041 HPWL: 1104202186
+[NesterovSolve] Iter: 350 overflow: 0.38311 HPWL: 1150197344
+[NesterovSolve] Iter: 360 overflow: 0.348334 HPWL: 1184572680
+[NesterovSolve] Iter: 370 overflow: 0.318109 HPWL: 1202393091
+[NesterovSolve] Iter: 380 overflow: 0.289686 HPWL: 1212899370
+[NesterovSolve] Iter: 390 overflow: 0.264802 HPWL: 1223802834
+[NesterovSolve] Iter: 400 overflow: 0.23961 HPWL: 1230330172
+[NesterovSolve] Iter: 410 overflow: 0.215144 HPWL: 1235611567
+[NesterovSolve] Iter: 420 overflow: 0.191953 HPWL: 1239615110
+[NesterovSolve] Iter: 430 overflow: 0.170762 HPWL: 1242511501
+[NesterovSolve] Iter: 440 overflow: 0.150447 HPWL: 1244791864
+[NesterovSolve] Iter: 450 overflow: 0.130505 HPWL: 1246890808
+[NesterovSolve] Iter: 460 overflow: 0.112737 HPWL: 1249139093
+[NesterovSolve] Finished with Overflow: 0.098727
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/placement/6-global_skip_io.odb'…
+Writing netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/placement/6-global_skip_io.nl.v'…
+Writing powered netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/placement/6-global_skip_io.pnl.v'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.22_03.41.17/tmp/placement/6-global_skip_io.def'…

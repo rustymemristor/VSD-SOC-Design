@@ -1,0 +1,155 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/pdn.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/floorplan/16-pdn.log
+[ERROR]: Last 10 lines:
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+Error: pdn_cfg.tcl, 41 can't read "::env(VDD_NETS)": no such variable
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/droute.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/27-detailed.log
+[ERROR]: Last 10 lines:
+_18041_
+_17929_
+_18042_
+_17831_
+_17930_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24236_
+_24322_
+Error: droute.tcl, 40 DRT-0085
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/droute.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/28-detailed.log
+[ERROR]: Last 10 lines:
+_18041_
+_17929_
+_18042_
+_17831_
+_17930_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24236_
+_24322_
+Error: droute.tcl, 40 DRT-0085
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/droute.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/29-detailed.log
+[ERROR]: Last 10 lines:
+_18041_
+_17929_
+_18042_
+_17831_
+_17930_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24236_
+_24322_
+Error: droute.tcl, 40 DRT-0085
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/dpl.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/31-diode_legalization.log
+[ERROR]: Last 10 lines:
+[INFO DPL-0035]  ANTENNA_281
+[INFO DPL-0035]  ANTENNA__27113__D
+[INFO DPL-0035]  ANTENNA__15454__S
+[INFO DPL-0035]  ANTENNA__29077__A1
+[INFO DPL-0035]  ANTENNA__18488__C
+[INFO DPL-0035]  ANTENNA__18488__C
+[INFO DPL-0035] message limit reached, this message will no longer print
+[ERROR DPL-0036] Detailed placement failed.
+Error: dpl.tcl, 18 DPL-0036
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/repair_antennas.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/33-global.log
+[ERROR]: Last 10 lines:
+---------------------------------------------------------------------------------------
+Total           317103        122415           38.60%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1159317 um
+[INFO GRT-0014] Routed nets: 17164
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[ERROR ODB-0391] order_wires failed: net _01613_, shorts to another term at wire point (310500 112880)
+Error: repair_antennas.tcl, 19 ODB-0391
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/repair_antennas.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/34-global.log
+[ERROR]: Last 10 lines:
+---------------------------------------------------------------------------------------
+Total           317103        122415           38.60%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1159317 um
+[INFO GRT-0014] Routed nets: 17164
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[ERROR ODB-0391] order_wires failed: net _01613_, shorts to another term at wire point (310500 112880)
+Error: repair_antennas.tcl, 19 ODB-0391
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/repair_antennas.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/35-global.log
+[ERROR]: Last 10 lines:
+---------------------------------------------------------------------------------------
+Total           317103        122415           38.60%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1159317 um
+[INFO GRT-0014] Routed nets: 17164
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[ERROR ODB-0391] order_wires failed: net _01613_, shorts to another term at wire point (310500 112880)
+Error: repair_antennas.tcl, 19 ODB-0391
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/droute.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/routing/36-detailed.log
+[ERROR]: Last 10 lines:
+_18041_
+_17929_
+_18042_
+_17831_
+_17930_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24236_
+_24322_
+Error: droute.tcl, 40 DRT-0085
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: heal_antenna_violators is no longer supported
+[ERROR]: during executing openroad script /openlane/scripts/openroad/gpl.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.21_15.44.04/logs/placement/36-global.log
+[ERROR]: Last 10 lines:
+[INFO GPL-0015] CoreAreaUxUy: 685860 690880
+[INFO GPL-0016] CoreArea: 462631200000
+[INFO GPL-0017] NonPlaceInstsArea: 10074662400
+[INFO GPL-0018] PlaceInstsArea: 478076012800
+[INFO GPL-0019] Util(%): 105.64
+[INFO GPL-0020] StdInstsArea: 478076012800
+[INFO GPL-0021] MacroInstsArea: 0
+[ERROR GPL-0301] Utilization 105.64% exceeds 100%.
+Error: gpl.tcl, 75 GPL-0301
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: A run for picorv32a with tag 'RUN_2024.07.21_15.44.04' already exists. Pass the -overwrite option to overwrite it or use a different tag
+[ERROR]: A run for picorv32a with tag 'RUN_2024.07.21_15.44.04' already exists. Pass the -overwrite option to overwrite it or use a different tag
+[ERROR]: A run for picorv32a with tag 'RUN_2024.07.21_15.44.04' already exists. Pass the -overwrite option to overwrite it or use a different tag
+[ERROR]: A run for picorv32a with tag 'RUN_2024.07.21_15.44.04' already exists. Pass the -overwrite option to overwrite it or use a different tag

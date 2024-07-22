@@ -1,0 +1,4 @@
+[WARNING]: SYNTH_MAX_FANOUT is now deprecated; use MAX_FANOUT_CONSTRAINT instead.
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: A netlist at /openlane/designs/picorv32a/runs/RUN_2024.07.20_07.59.59/results/synthesis/picorv32a.v already exists. Synthesis will be skipped.

@@ -1,0 +1,111 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.03.35/tmp/floorplan/5-tapcell.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[WARNING GPL-0150] -skip_io will disable timing driven mode.
+[WARNING GPL-0151] -skip_io will disable routability driven mode.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 685860 690880
+[INFO GPL-0006] NumInstances: 23459
+[INFO GPL-0007] NumPlaceInstances: 16407
+[INFO GPL-0008] NumFixedInstances: 7052
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 16509
+[INFO GPL-0011] NumPins: 56326
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 691600 702320
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 685860 690880
+[INFO GPL-0016] CoreArea: 462631200000
+[INFO GPL-0017] NonPlaceInstsArea: 10074662400
+[INFO GPL-0018] PlaceInstsArea: 162107974400
+[INFO GPL-0019] Util(%): 35.82
+[INFO GPL-0020] StdInstsArea: 162107974400
+[INFO GPL-0021] MacroInstsArea: 0
+[INFO GPL-0031] FillerInit: NumGCells: 18381
+[INFO GPL-0032] FillerInit: NumGNets: 16509
+[INFO GPL-0033] FillerInit: NumGPins: 56326
+[INFO GPL-0023] TargetDensity: 0.40
+[INFO GPL-0024] AveragePlaceInstArea: 9880415
+[INFO GPL-0025] IdealBinArea: 24701038
+[INFO GPL-0026] IdealBinCnt: 18729
+[INFO GPL-0027] TotalBinArea: 462631200000
+[INFO GPL-0028] BinCnt: 128 128
+[INFO GPL-0029] BinSize: 5316 5313
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter: 1 overflow: 0.999293 HPWL: 41759572
+[NesterovSolve] Iter: 10 overflow: 0.999018 HPWL: 28876412
+[NesterovSolve] Iter: 20 overflow: 0.99901 HPWL: 28557088
+[NesterovSolve] Iter: 30 overflow: 0.998978 HPWL: 28461611
+[NesterovSolve] Iter: 40 overflow: 0.998927 HPWL: 28426257
+[NesterovSolve] Iter: 50 overflow: 0.998887 HPWL: 28413948
+[NesterovSolve] Iter: 60 overflow: 0.99889 HPWL: 28407187
+[NesterovSolve] Iter: 70 overflow: 0.998882 HPWL: 28408585
+[NesterovSolve] Iter: 80 overflow: 0.998836 HPWL: 28425203
+[NesterovSolve] Iter: 90 overflow: 0.998736 HPWL: 28487643
+[NesterovSolve] Iter: 100 overflow: 0.998547 HPWL: 28679975
+[NesterovSolve] Iter: 110 overflow: 0.998078 HPWL: 29279887
+[NesterovSolve] Iter: 120 overflow: 0.997253 HPWL: 30849309
+[NesterovSolve] Iter: 130 overflow: 0.996169 HPWL: 34404202
+[NesterovSolve] Iter: 140 overflow: 0.994939 HPWL: 40951427
+[NesterovSolve] Iter: 150 overflow: 0.99236 HPWL: 49131171
+[NesterovSolve] Iter: 160 overflow: 0.989797 HPWL: 59129903
+[NesterovSolve] Iter: 170 overflow: 0.9862 HPWL: 72708305
+[NesterovSolve] Iter: 180 overflow: 0.980098 HPWL: 90339969
+[NesterovSolve] Iter: 190 overflow: 0.972343 HPWL: 111811602
+[NesterovSolve] Iter: 200 overflow: 0.960733 HPWL: 136604946
+[NesterovSolve] Iter: 210 overflow: 0.945789 HPWL: 165143525
+[NesterovSolve] Iter: 220 overflow: 0.927894 HPWL: 196983621
+[NesterovSolve] Iter: 230 overflow: 0.903923 HPWL: 232003441
+[NesterovSolve] Iter: 240 overflow: 0.876134 HPWL: 268837321
+[NesterovSolve] Iter: 250 overflow: 0.842208 HPWL: 307050827
+[NesterovSolve] Iter: 260 overflow: 0.806306 HPWL: 341862170
+[NesterovSolve] Iter: 270 overflow: 0.767251 HPWL: 376726939
+[NesterovSolve] Iter: 280 overflow: 0.722295 HPWL: 414775959
+[NesterovSolve] Iter: 290 overflow: 0.677684 HPWL: 453639493
+[NesterovSolve] Iter: 300 overflow: 0.629591 HPWL: 490114738
+[NesterovSolve] Iter: 310 overflow: 0.581018 HPWL: 522223370
+[NesterovSolve] Iter: 320 overflow: 0.528407 HPWL: 556505288
+[NesterovSolve] Iter: 330 overflow: 0.474981 HPWL: 592451824
+[NesterovSolve] Iter: 340 overflow: 0.426942 HPWL: 616040778
+[NesterovSolve] Iter: 350 overflow: 0.382374 HPWL: 635468322
+[NesterovSolve] Iter: 360 overflow: 0.344848 HPWL: 649495367
+[NesterovSolve] Iter: 370 overflow: 0.314765 HPWL: 655636537
+[NesterovSolve] Iter: 380 overflow: 0.28899 HPWL: 659150458
+[NesterovSolve] Iter: 390 overflow: 0.263421 HPWL: 661871464
+[NesterovSolve] Iter: 400 overflow: 0.238175 HPWL: 663779108
+[NesterovSolve] Iter: 410 overflow: 0.215254 HPWL: 665234989
+[NesterovSolve] Iter: 420 overflow: 0.193279 HPWL: 666127388
+[NesterovSolve] Iter: 430 overflow: 0.17229 HPWL: 666885084
+[NesterovSolve] Iter: 440 overflow: 0.154571 HPWL: 667869166
+[NesterovSolve] Iter: 450 overflow: 0.137572 HPWL: 668729428
+[NesterovSolve] Iter: 460 overflow: 0.121448 HPWL: 669681624
+[NesterovSolve] Iter: 470 overflow: 0.107602 HPWL: 670913410
+[NesterovSolve] Finished with Overflow: 0.099217
+Writing OpenROAD database to '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.03.35/tmp/placement/6-global_skip_io.odb'…
+Writing netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.03.35/tmp/placement/6-global_skip_io.nl.v'…
+Writing powered netlist to '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.03.35/tmp/placement/6-global_skip_io.pnl.v'…
+Writing layout to '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.03.35/tmp/placement/6-global_skip_io.def'…

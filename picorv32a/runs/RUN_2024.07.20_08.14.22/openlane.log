@@ -1,0 +1,147 @@
+[WARNING]: SYNTH_MAX_FANOUT is now deprecated; use MAX_FANOUT_CONSTRAINT instead.
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[INFO]: Merging /openlane/designs/picorv32a/src/rusty_inv.lef
+[INFO]: Running Synthesis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/synthesis/1-synthesis.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/synthesis/2-sta.log)...
+[INFO]: Running Initial Floorplanning (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/3-initial_fp.log)...
+[INFO]: Floorplanned with width 779.24 and height 777.92.
+[INFO]: Running IO Placement (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/4-io.log)...
+[INFO]: Running Tap/Decap Insertion (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/5-tap.log)...
+[INFO]: Running Global Placement (skip_io) (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/5-global_skip_io.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/7-gpl_sta.log)...
+[INFO]: Running IO Placement (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/8-io.log)...
+[INFO]: Running Global Placement (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/8-global.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/10-gpl_sta.log)...
+[INFO]: Running Placement Resizer Design Optimizations (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/11-resizer.log)...
+[INFO]: Running Detailed Placement (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/12-detailed.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/placement/13-dpl_sta.log)...
+[INFO]: Running Clock Tree Synthesis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/cts/14-cts.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/cts/15-cts_sta.log)...
+[INFO]: Generating PDN (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/16-pdn.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/pdn.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/16-pdn.log
+[ERROR]: Last 10 lines:
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+Error: pdn_cfg.tcl, 41 can't read "::env(VDD_NETS)": no such variable
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/picorv32a/runs/RUN_2024.07.20_08.14.22/issue_reproducible' if you're going to submit an issue.
+[INFO]: Running Global Routing Resizer Design Optimizations (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/17-resizer_design.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/17-resizer_design.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 153449
+[INFO GRT-0198] Via related Steiner nodes: 4207
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 235296
+[INFO GRT-0112] Final usage 3D: 993747
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/picorv32a/runs/RUN_2024.07.20_08.14.22/issue_reproducible' if you're going to submit an issue.
+[INFO]: Running Placement Resizer Timing Optimizations (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/cts/18-resizer.log)...
+[INFO]: Power planning with power {VPWR} and ground {VGND}...
+[INFO]: Generating PDN (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/19-pdn.log)...
+[INFO]: Running Global Routing Resizer Design Optimizations (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/20-resizer_design.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/20-resizer_design.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 156324
+[INFO GRT-0198] Via related Steiner nodes: 4171
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 239210
+[INFO GRT-0112] Final usage 3D: 1008863
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/picorv32a/runs/RUN_2024.07.20_08.14.22/issue_reproducible' if you're going to submit an issue.
+[INFO]: Running Detailed Routing (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/21-detailed.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/droute.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/21-detailed.log
+[ERROR]: Last 10 lines:
+_31785_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_30315_
+_29837_
+_29839_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_29838_
+_30400_
+Error: droute.tcl, 40 DRT-0085
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/picorv32a/runs/RUN_2024.07.20_08.14.22/issue_reproducible' if you're going to submit an issue.
+[INFO]: Routing top-level power nets (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/22-power_routing.log)...
+[ERROR]: during executing: "openroad -exit -no_init -python /openlane/scripts/odbpy/power_utils.py power_route --core-vdd-pin VPWR --core-gnd-pin VGND --input-lef /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/merged.nom.lef --output-def /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/routing/22-picorv32a.power_routed.def --output /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/routing/22-picorv32a.power_routed.odb /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/results/floorplan/picorv32a.odb |& tee /dev/null /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/22-power_routing.log"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+  File "/nix/store/6sszs80r74y1k2i9ydk7g590ng4h72nh-python3-3.11.6-env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/odbpy/reader.py", line 90, in wrapper
+    function(**kwargs)
+  File "/openlane/scripts/odbpy/power_utils.py", line 847, in power_route
+    assert len({box["type"]: None for box in ALL_BOXES}) == 3
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+child process exited abnormally
+
+[INFO]: Generating PDN (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/floorplan/23-pdn.log)...
+[INFO]: Running Global Routing Resizer Design Optimizations (log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/24-resizer_design.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/picorv32a/runs/RUN_2024.07.20_08.14.22/logs/routing/24-resizer_design.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 156324
+[INFO GRT-0198] Via related Steiner nodes: 4171
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 239210
+[INFO GRT-0112] Final usage 3D: 1008863
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/picorv32a/runs/RUN_2024.07.20_08.14.22/issue_reproducible' if you're going to submit an issue.
+[INFO]: Using configuration in 'designs/picorv32a/config.tcl'...
+[INFO]: PDK Root: /home/srujan/.volare
+[INFO]: Process Design Kit: sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Run Directory: /openlane/designs/picorv32a/runs/RUN_2024.07.20_08.14.22
+[ERROR]: A run for picorv32a with tag 'RUN_2024.07.20_08.14.22' already exists. Pass the -overwrite option to overwrite it or use a different tag
+[INFO]: Merging /openlane/designs/picorv32a/src/rusty_inv.lef
+[INFO]: Merging /openlane/designs/picorv32a/src/rusty_inv.lef
+[INFO]: Using configuration in 'designs/picorv32a/config.tcl'...
+[INFO]: PDK Root: /home/srujan/.volare
+[INFO]: Process Design Kit: sky130A
+[INFO]: Standard Cell Library: sky130_fd_sc_hd
+[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd

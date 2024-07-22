@@ -1,0 +1,49 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.44.04/tmp/routing/30-diodes.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met3. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[WARNING GPL-0150] -skip_io will disable timing driven mode.
+[WARNING GPL-0151] -skip_io will disable routability driven mode.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 685860 690880
+[INFO GPL-0006] NumInstances: 70077
+[INFO GPL-0007] NumPlaceInstances: 63025
+[INFO GPL-0008] NumFixedInstances: 7052
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 17199
+[INFO GPL-0011] NumPins: 68474
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 691600 702320
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 685860 690880
+[INFO GPL-0016] CoreArea: 462631200000
+[INFO GPL-0017] NonPlaceInstsArea: 10074662400
+[INFO GPL-0018] PlaceInstsArea: 478076012800
+[INFO GPL-0019] Util(%): 105.64
+[INFO GPL-0020] StdInstsArea: 478076012800
+[INFO GPL-0021] MacroInstsArea: 0
+[ERROR GPL-0301] Utilization 105.64% exceeds 100%.
+Error: gpl.tcl, 75 GPL-0301

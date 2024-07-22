@@ -1,0 +1,597 @@
+OpenROAD d423155d69de7f683a23f6916ead418a615ad4ad 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/picorv32a/runs/RUN_2024.07.21_15.44.04/tmp/routing/30-diodes.odb'…
+define_corners Typical
+read_liberty -corner Typical /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/scripts/base.sdc'…
+[INFO]: Setting output delay to: 4.946000000000001
+[INFO]: Setting input delay to: 4.946000000000001
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[INFO]: Setting timing derate to: 5.0 %
+[INFO ORD-0030] Using 2 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     442
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   picorv32a
+Die area:                 ( 0 0 ) ( 691600 702320 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     70077
+Number of terminals:      411
+Number of snets:          2
+Number of nets:           17199
+
+[INFO DRT-0167] List of default vias:
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 530.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete Fr_VIA.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] FR_VIA shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 752639.
+[INFO DRT-0033] mcon shape region query size = 308712.
+[INFO DRT-0033] met1 shape region query size = 157668.
+[INFO DRT-0033] via shape region query size = 6275.
+[INFO DRT-0033] met2 shape region query size = 3961.
+[INFO DRT-0033] via2 shape region query size = 5020.
+[INFO DRT-0033] met3 shape region query size = 3978.
+[INFO DRT-0033] via3 shape region query size = 5020.
+[INFO DRT-0033] met4 shape region query size = 1375.
+[INFO DRT-0033] via4 shape region query size = 100.
+[INFO DRT-0033] met5 shape region query size = 120.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0076]   Complete 1000 pins.
+[INFO DRT-0076]   Complete 2000 pins.
+[INFO DRT-0078]   Complete 2106 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0079]   Complete 200 unique inst patterns.
+[INFO DRT-0079]   Complete 300 unique inst patterns.
+[INFO DRT-0079]   Complete 400 unique inst patterns.
+[INFO DRT-0079]   Complete 500 unique inst patterns.
+[WARNING DRT-0087] No valid pattern for unique instance _14686_, master is rusty_inv.
+[WARNING DRT-0087] No valid pattern for unique instance _14662_, master is rusty_inv.
+[WARNING DRT-0087] No valid pattern for unique instance _14958_, master is rusty_inv.
+[WARNING DRT-0087] No valid pattern for unique instance _14753_, master is rusty_inv.
+[INFO DRT-0081]   Complete 512 unique inst patterns.
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__28307__B2
+_28307_
+ANTENNA__28313__B2
+_28313_
+_28309_
+ANTENNA__28309__A
+ANTENNA__28065__A1_N
+_28065_
+ANTENNA__28065__B1
+_28312_
+ANTENNA__28065__B2
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28305_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24664_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28301_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27447_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27436_
+ANTENNA__27428__S
+ANTENNA__27436__A1
+_27427_
+ANTENNA__27428__A0
+ANTENNA__27436__B1
+_27428_
+ANTENNA__27438__A2
+_27438_
+_27429_
+ANTENNA__27424__A
+_27424_
+_27539_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17091_
+_17070_
+ANTENNA__17091__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28293_
+_28008_
+ANTENNA__28008__B2
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28315_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27448_
+_27445_
+_27444_
+_27432_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20718_
+_20918_
+_20917_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28297_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_16234_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_21102_
+_20923_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28290_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28287_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28283_
+ANTENNA__28320__B2
+_28320_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17169_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28319_
+ANTENNA__28319__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17165_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28095_
+ANTENNA__28095__A
+_28328_
+_28325_
+ANTENNA__28328__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27414_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17157_
+ANTENNA__17160__A1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17154_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_22639_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27568_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28271_
+ANTENNA__28271__A
+_28278_
+ANTENNA__28278__A
+_28306_
+ANTENNA__28306__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28279_
+ANTENNA__28279__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24669_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24606_
+ANTENNA__28227__A
+_28227_
+_24593_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20377_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28275_
+ANTENNA__28275__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28250_
+ANTENNA__28250__A
+_28268_
+ANTENNA__28268__A
+_27936_
+_27934_
+ANTENNA__27936__A2_N
+ANTENNA__27936__B2
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20321_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20380_
+_20379_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27379_
+_27381_
+_27380_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28266_
+ANTENNA__28263__B2
+_28263_
+_28265_
+ANTENNA__28265__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24652_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24639_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28261_
+ANTENNA__28261__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24612_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20317_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27890_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_22774_
+_22773_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20316_
+_20513_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_21156_
+_21157_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__21122__A
+_21122_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17126_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA_clkbuf_leaf_25_clk_A
+clkbuf_leaf_25_clk
+ANTENNA__28258__B2
+_28258_
+_28257_
+ANTENNA__28257__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15853_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_22896_
+_23026_
+_23023_
+_23021_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28253_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27301_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_21328_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20517_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20049_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24688_
+ANTENNA__24688__A1
+ANTENNA__24624__S
+ANTENNA__24688__S
+_24624_
+_24623_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17121_
+ANTENNA__17121__A2
+_14984_
+ANTENNA__14984__A
+_17120_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20048_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__29061__A2
+_28249_
+ANTENNA__29061__B2
+_27794_
+ANTENNA__28249__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24567_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28246_
+_27873_
+ANTENNA__28246__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15720_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19992_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28243_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27203_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14975_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__27209__A
+_27209_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28237_
+_27825_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17106_
+ANTENNA__17108__A1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_20772_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24532_
+_17093_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27847_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15544_
+_15527_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27218_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__14824__A
+_14824_
+ANTENNA__14859__A
+_14859_
+_27158_
+_14825_
+_26979_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28842_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28117_
+ANTENNA__16948__A1
+_16948_
+ANTENNA__16948__A2
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27131_
+ANTENNA__27131__A2_N
+ANTENNA__27131__B2
+ANTENNA__14753__A
+_14753_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__15310__B2
+ANTENNA__15305__A1
+_15310_
+ANTENNA__15310__A1
+_15304_
+ANTENNA__15310__B1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__15083__A
+_15083_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__16871__A2
+_16871_
+_16867_
+ANTENNA__16867__A2
+_16869_
+ANTENNA__16867__B1
+ANTENNA__16869__A
+_30717_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15064_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_30821_
+_14992_
+_30734_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__15208__A
+_15208_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__16497__A1
+_16497_
+_16014_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__15708__B1
+_15708_
+_15707_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__28788__A
+_28788_
+_28889_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28786_
+_28796_
+ANTENNA__28786__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__26356__A0
+_26356_
+_14834_
+ANTENNA__26356__A1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14816_
+_14832_
+ANTENNA__14817__A
+_14817_
+ANTENNA__29106__A1
+_29106_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14746_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15045_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15027_
+_14662_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19173_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__28439__B
+_28439_
+_14747_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14687_
+ANTENNA__14686__A
+_14686_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28765_
+ANTENNA__28765__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14723_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_16934_
+ANTENNA__16934__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14707_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_28626_
+ANTENNA__28626__C1
+_28624_
+_28625_
+_28619_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_15048_
+_14803_
+_14842_
+ANTENNA__14803__B
+ANTENNA__14803__A
+_28353_
+ANTENNA__28353__B
+ANTENNA__28353__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_23185_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_25175_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_25174_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19683_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19680_
+_19679_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_23055_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_26778_
+ANTENNA__26778__C1
+_26773_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_26761_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_26759_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_26872_
+_26869_
+ANTENNA__26872__C1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_26760_
+ANTENNA__26760__C1
+clkbuf_leaf_73_clk
+ANTENNA_clkbuf_leaf_73_clk_A
+_28322_
+ANTENNA__28322__A
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_30162_
+_28331_
+_30448_
+ANTENNA__28207__A1
+ANTENNA__28207__C1
+_28207_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14963_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17245_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24503_
+_24477_
+_24476_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+hold3
+_17251_
+ANTENNA__17251__A
+[INFO DRT-0082]   Complete 10000 groups.
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_23801_
+_23796_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_27514_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19220_
+_19221_
+_19187_
+ANTENNA__19187__A
+_19139_
+_19142_
+_19141_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_18722_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17705_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17633_
+_17604_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_14958_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19386_
+_19238_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+ANTENNA__24331__A
+_24331_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17525_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_18474_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17310_
+_17311_
+ANTENNA__17311__A
+_17312_
+ANTENNA__17312__A1
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19980_
+_20150_
+ANTENNA__20312__A
+_20312_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_18589_
+_18472_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_18256_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17589_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_18128_
+_18069_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17734_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17655_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_23755_
+_23756_
+_23855_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_19673_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_17928_
+_18041_
+_17929_
+_18042_
+_17831_
+_17930_
+[ERROR DRT-0085] Valid access pattern combination not found for 
+_24236_
+_24322_
+Error: droute.tcl, 40 DRT-0085

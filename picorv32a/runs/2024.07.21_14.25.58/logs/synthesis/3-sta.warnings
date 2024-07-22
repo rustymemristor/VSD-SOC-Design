@@ -1,0 +1,2 @@
+Warning: /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Warning: There are 41 unconstrained endpoints.

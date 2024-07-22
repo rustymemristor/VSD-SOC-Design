@@ -1,0 +1,2 @@
+[WARNING STA-1173] /openlane/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING MPL-0100] No macros found.
