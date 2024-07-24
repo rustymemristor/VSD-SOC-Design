@@ -365,16 +365,16 @@ Folder after generation of mag file for insertion (rusty_inv.mag)
 
 
 ![](Screenshots/Lab4/Screenshot_20240720_130701.png)
-
+Writing lef file out.
 
 ![](Screenshots/Lab4/Screenshot_20240720_130752.png)
-
+Produced lef file "rusty_inv.lef"
 
 ![](Screenshots/Lab4/Screenshot_20240720_131136.png)
-
+updated src folder.
 
 ![](Screenshots/Lab4/Screenshot_20240720_132209.png)
-
+Modified config.tcl to add Libraries and the custom lef (rusty_inv.lef)
 
 ![](Screenshots/Lab4/Screenshot_20240720_133051.png)
 
@@ -383,25 +383,35 @@ Folder after generation of mag file for insertion (rusty_inv.mag)
 
 
 ![](Screenshots/Lab4/Screenshot_20240720_135956.png)
-
+Verifying rusty_inv cell existence post synthesis.
 
 ![](Screenshots/Lab4/Screenshot_20240720_140111.png)
-
+run_floorplan does not work after custom cell insertion.
 
 ![](Screenshots/Lab4/Screenshot_20240720_140234.png)
+An alternative method using 
+```
+init_floorplan
+```
 
+```
+place_io
+```
 
+```
+tap_decap_or
+```
 ![](Screenshots/Lab4/Screenshot_20240720_140445.png)
-
+tap_decap_or output log.
 
 ![](Screenshots/Lab4/Screenshot_20240720_140548.png)
 
 
 ![](Screenshots/Lab4/Screenshot_20240720_140731.png)
-
+Command to view generated DEF.
 
 ![](Screenshots/Lab4/Screenshot_20240720_141320.png)
-
+Checking cell existence inside netlist.
 
 ![](Screenshots/Lab4/Screenshot_20240721_091132.png)
 
@@ -410,28 +420,29 @@ Folder after generation of mag file for insertion (rusty_inv.mag)
 
 
 ![](Screenshots/Lab4/Screenshot_20240721_091233.png)
-
+Synthesis STA.
 
 ![](Screenshots/Lab4/Screenshot_20240721_092652.png)
-
+pre_sta.conf file written out.
 
 ![](Screenshots/Lab4/Screenshot_20240721_103532.png)
-
+CTS log 1.
 
 ![](Screenshots/Lab4/Screenshot_20240721_103816.png)
-
+CTS log 2.
 
 ![](Screenshots/Lab4/Screenshot_20240721_113333.png)
-
+Completing clock tree synthesis successfully, proceeding with OPENROAD to find slack.
 
 ![](Screenshots/Lab4/Screenshot_20240721_114329.png)
-
+Running the OPENROAD commands to set LIBERTY files, associate with picorv32a and show relevant reports.
 
 ![](Screenshots/Lab4/Screenshot_20240721_114343.png)
+A final look at OPENROAD showing the slack 1.
 
 
 ![](Screenshots/Lab4/Screenshot_20240721_114351.png)
-
+A final look at OPENROAD showing the slack 2.
 
 ## Lab 5
 Tasks for lab 5 include
@@ -439,15 +450,19 @@ Tasks for lab 5 include
 2. Adjusting design for DRC pass.
 
 ![](Screenshots/Lab5/Screenshot_20240721_192620.png)
-
+Floorplan, CTS, and placement executes.
 
 ![](Screenshots/Lab5/Screenshot_20240721_192745.png)
 
 
 ![](Screenshots/Lab5/Screenshot_20240721_192801.png)
-
+Run_routing fails due to high congestion. A possible solution to this would be modifying the FP_CORE_UTIL parameter, so initially it was changed to 40.
 
 ![](Screenshots/Lab5/Screenshot_20240721_194846.png)
+Generating PDN didn't work this time, so searching the openlane documentation provided a possible answer 
+```
+run_power_grid_generation
+```
 
 
 ![](Screenshots/Lab5/Screenshot_20240721_201629.png)
@@ -464,12 +479,17 @@ Tasks for lab 5 include
 
 ![](Screenshots/Lab5/Screenshot_20240722_090027.png)
 
+Had to change environments due to an issue with an unstable kernel, but environment is consistent.
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.05.04 AM.png)
 
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.05.24 AM.png)
 
-![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.54.22 PM.png)
-
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.53.58 PM.png)
 
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.53.50 PM.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.54.22 PM.png)
+
+
+
+
