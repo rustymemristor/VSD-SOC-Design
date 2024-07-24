@@ -463,3 +463,13 @@ Tasks for lab 5 include
 
 
 ![](Screenshots/Lab5/Screenshot_20240722_090027.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.05.04 AM.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.05.24 AM.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.54.22 PM.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.53.58 PM.png)
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.53.50 PM.png)
