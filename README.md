@@ -363,7 +363,6 @@ Verifying coincidence of ports on intersections of tracks.
 ![](Screenshots/Lab4/Screenshot_20240720_130456.png)
 Folder after generation of mag file for insertion (rusty_inv.mag)
 
-
 ![](Screenshots/Lab4/Screenshot_20240720_130701.png)
 Writing lef file out.
 
@@ -377,10 +376,10 @@ updated src folder.
 Modified config.tcl to add Libraries and the custom lef (rusty_inv.lef)
 
 ![](Screenshots/Lab4/Screenshot_20240720_133051.png)
-
+Using the custom cell.
 
 ![](Screenshots/Lab4/Screenshot_20240720_135921.png)
-
+Synthesis log.
 
 ![](Screenshots/Lab4/Screenshot_20240720_135956.png)
 Verifying rusty_inv cell existence post synthesis.
@@ -405,7 +404,10 @@ tap_decap_or
 tap_decap_or output log.
 
 ![](Screenshots/Lab4/Screenshot_20240720_140548.png)
-
+running placement
+```
+run_placement
+```
 
 ![](Screenshots/Lab4/Screenshot_20240720_140731.png)
 Command to view generated DEF.
@@ -414,10 +416,10 @@ Command to view generated DEF.
 Checking cell existence inside netlist.
 
 ![](Screenshots/Lab4/Screenshot_20240721_091132.png)
-
+Modifying synthesis for final run.
 
 ![](Screenshots/Lab4/Screenshot_20240721_091132.png)
-
+synthesis once again.
 
 ![](Screenshots/Lab4/Screenshot_20240721_091233.png)
 Synthesis STA.
@@ -439,7 +441,6 @@ Running the OPENROAD commands to set LIBERTY files, associate with picorv32a and
 
 ![](Screenshots/Lab4/Screenshot_20240721_114343.png)
 A final look at OPENROAD showing the slack 1.
-
 
 ![](Screenshots/Lab4/Screenshot_20240721_114351.png)
 A final look at OPENROAD showing the slack 2.
@@ -490,6 +491,12 @@ Had to change environments due to an issue with an unstable kernel, but environm
 
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%207.54.22 PM.png)
 
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.45.34 PM.png)
+Post global routing view.
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.34.33 PM.png)
+Magic file view.
+
+![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.43.22 PM.png)
 
 
 
