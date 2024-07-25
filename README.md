@@ -412,7 +412,7 @@ run_placement
 ![](Screenshots/Lab4/Screenshot_20240720_140731.png)
 Command to view generated DEF.
 
-![](Screenshots/Lab4/Screenshot\from\2024-07-25\08-39-23.png)
+![2024-07-25_08-39-23](https://github.com/user-attachments/assets/0c4ab675-a8ba-451c-b155-b5ddff99e696)
 Generated DEF file with our custom inverter cell.
 
 ![](Screenshots/Lab4/Screenshot_20240720_141320.png)
