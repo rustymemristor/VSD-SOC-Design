@@ -501,5 +501,12 @@ Magic file view.
 
 ![](Screenshots/Lab5/Screenshot%202024-07-24%20at%208.43.22 PM.png)
 
+Unfortunately the final view could not be viewed, and hence I decided to use OPENROAD for the view
+![](Screenshots/Lab5/2024-07-25_11-43-36.png)
+Full design.
+
+![](Screenshots/Lab5/2024-07-25_11-43-48.png)
+Close up look.
+
 
 
